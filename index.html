@@ -12,90 +12,103 @@
     }
     h1 {
       color: #333;
+      text-align: center;
+      margin-bottom: 3rem;
     }
-    .modul {
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+      gap: 1.5rem;
+    }
+    .kachel {
       background-color: white;
-      border-radius: 8px;
+      border-radius: 10px;
       padding: 1.5rem;
-      margin-bottom: 1.5rem;
       box-shadow: 0 0 10px rgba(0,0,0,0.1);
+      transition: transform 0.2s;
     }
-    .prompt-box {
-      background: #eee;
-      padding: 1rem;
-      margin-top: 1rem;
-      border-radius: 5px;
-      font-family: monospace;
+    .kachel:hover {
+      transform: scale(1.02);
+    }
+    .kachel h2 {
+      font-size: 1.2rem;
+      margin-bottom: 0.5rem;
+    }
+    .kachel p {
+      font-size: 0.95rem;
+      color: #333;
+    }
+    footer {
+      margin-top: 4rem;
+      text-align: center;
+    }
+    footer a {
+      color: #0066cc;
+      text-decoration: none;
+    }
+    footer a:hover {
+      text-decoration: underline;
     }
   </style>
 </head>
 <body>
   <h1>🧠 Willkommen zum interaktiven KI-Lernprojekt</h1>
 
-  <div class="modul">
-    <h2>🔍 Modul 1: Was ist KI?</h2>
-    <p>In diesem Modul lernst du die Grundlagen von Künstlicher Intelligenz kennen: Definition, Geschichte und wichtige Begriffe.</p>
-    <div class="prompt-box">
-      Prompt-Beispiel: "Erkläre mir KI wie einem 12-jährigen Kind."
+  <div class="grid">
+    <div class="kachel">
+      <h2>🔍 Was ist KI?</h2>
+      <p>Grundlagen von Künstlicher Intelligenz: Definition, Geschichte, Schlüsselbegriffe.</p>
+    </div>
+    <div class="kachel">
+      <h2>🧠 Neuronales Netz</h2>
+      <p>Aufbau, Funktionsweise und Lernprozess eines neuronalen Netzwerks.</p>
+    </div>
+    <div class="kachel">
+      <h2>🤖 GPT & Sprachmodelle</h2>
+      <p>Wie funktionieren große Sprachmodelle und wie werden sie genutzt?</p>
+    </div>
+    <div class="kachel">
+      <h2>🧠 Memory & Gedächtnis</h2>
+      <p>Kurzzeit-, Langzeit- und Vektorspeicher in modernen KI-Systemen.</p>
+    </div>
+    <div class="kachel">
+      <h2>💬 Prompting & RePrompting</h2>
+      <p>Wie formuliere ich effektive Prompts für optimale KI-Ergebnisse?</p>
+    </div>
+    <div class="kachel">
+      <h2>🧰 Toolnutzung durch KI</h2>
+      <p>APIs, Browser und Tools als Erweiterung künstlicher Intelligenz.</p>
+    </div>
+    <div class="kachel">
+      <h2>🤖 Agenten & Automatisierung</h2>
+      <p>AutoGPT, CrewAI und andere autonome Systeme in Aktion.</p>
+    </div>
+    <div class="kachel">
+      <h2>🎙️ Interaktion & Stimme</h2>
+      <p>Whisper, TTS und STT – Spracheingabe und -ausgabe mit KI.</p>
+    </div>
+    <div class="kachel">
+      <h2>☁️ Lokale vs. Cloud-KI</h2>
+      <p>Vergleich von lokal installierbaren und cloudbasierten KI-Lösungen.</p>
+    </div>
+    <div class="kachel">
+      <h2>🖼️ Multimodalität</h2>
+      <p>Text, Bild und Sprache gemeinsam nutzen – multimodale Systeme.</p>
+    </div>
+    <div class="kachel">
+      <h2>🔐 Datenschutz & Sicherheit</h2>
+      <p>DSGVO-Konformität und Transparenz bei der Anwendung von KI.</p>
     </div>
   </div>
 
-  <div class="modul">
-    <h2>🧠 Modul 2: Wie funktioniert ein neuronales Netz?</h2>
-    <p>Hier erfährst du, wie ein einfaches neuronales Netz aufgebaut ist und wie es lernt.</p>
-    <div class="prompt-box">
-      Prompt-Beispiel: "Wie lernt ein neuronales Netz aus Daten?"
-    </div>
-  </div>
-
-  <div class="modul">
-    <h2>🤖 Modul 3: Was macht GPT so besonders?</h2>
-    <p>In diesem Abschnitt wird erklärt, wie Sprachmodelle wie ChatGPT funktionieren und wofür sie verwendet werden.</p>
-    <div class="prompt-box">
-      Prompt-Beispiel: "Wie funktioniert ein Sprachmodell wie ChatGPT?"
-    </div>
-  </div>
-
-  <div class="modul">
-    <h2>🧠 Memory & Gedächtnis</h2>
-    <p>Kurzeit-, Langzeit- und Vektorspeicher für KI-Systeme. Warum Erinnerungsmechanismen wichtig sind.</p>
-  </div>
-
-  <div class="modul">
-    <h2>💬 Prompting & RePrompting</h2>
-    <p>Wie man effektive Anweisungen formuliert, um gute Ergebnisse von KI-Modellen zu erhalten.</p>
-  </div>
-
-  <div class="modul">
-    <h2>🧰 Toolnutzung durch KI</h2>
-    <p>Wie KI mit Tools und APIs wie z. B. Browser, Python oder Datenbanken interagieren kann.</p>
-  </div>
-
-  <div class="modul">
-    <h2>🤖 Agenten & Automatisierung</h2>
-    <p>AutoGPT, CrewAI und andere Systeme, die komplexe Aufgaben autonom erledigen.</p>
-  </div>
-
-  <div class="modul">
-    <h2>🎙️ Interaktion & Stimme</h2>
-    <p>Whisper, Text-to-Speech und Speech-to-Text Technologien im Einsatz mit Sprachmodellen.</p>
-  </div>
-
-  <div class="modul">
-    <h2>☁️ Lokale vs. Cloud-KI</h2>
-    <p>Unterschiede zwischen offlinefähigen KI-Systemen und cloudbasierten APIs.</p>
-  </div>
-
-  <div class="modul">
-    <h2>🖼️ Multimodalität</h2>
-    <p>Integration von Text, Bild und Sprache als kombinierte Eingabe- und Ausgabeformate.</p>
-  </div>
-
-  <div class="modul">
-    <h2>🔐 Datenschutz & Sicherheit</h2>
-    <p>Wie KI-Anwendungen DSGVO-konform gestaltet werden und wie Transparenz und Sicherheit gewährleistet werden können.</p>
-  </div>
-
-  <p>🔧 Dieses Projekt wird kontinuierlich weiterentwickelt und auf <a href="https://github.com/" target="_blank">GitHub</a> dokumentiert.</p>
+  <footer>
+    <p>🔧 Dieses Projekt wird kontinuierlich weiterentwickelt und auf 
+      <a href="https://github.com/steffen-schlehahn/Erkl-re-mir-KI-3-aber-anders" target="_blank">GitHub</a> dokumentiert.
+    </p>
+    <p>
+      📄 <a href="https://github.com/steffen-schlehahn/Erkl-re-mir-KI-3-aber-anders/blob/main/Planning.md" target="_blank">Planning.md</a> |
+      ✅ <a href="https://github.com/steffen-schlehahn/Erkl-re-mir-KI-3-aber-anders/blob/main/task.md" target="_blank">Task.md</a>
+    </p>
+  </footer>
 </body>
 </html>
